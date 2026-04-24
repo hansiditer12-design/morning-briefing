@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="noindex, nofollow">
+	<title>Morning Briefing — {{DATUM}}</title>
+	<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+	<div class="container">
+
+		<header class="briefing-header">
+			<p class="kicker">Morning Briefing</p>
+			<h1 class="title">{{DATUM}}</h1>
+			<div class="meta">
+				<span>Lesezeit ca. {{LESEZEIT}} Min.</span>
+				<span>Generiert {{GENERIERT_AM}}</span>
+			</div>
+		</header>
+
+		<section id="wetter">
+			<h2 class="section-title">Wetter</h2>
+			<div class="weather-grid">
+				{{WETTER_BLOCK}}
+			</div>
+		</section>
+
+		<section id="weltpolitik">
+			<h2 class="section-title">Weltpolitik</h2>
+			{{WELTPOLITIK_BLOCK}}
+		</section>
+
+		<section id="energietechnik">
+			<h2 class="section-title">Energietechnik</h2>
+			{{ENERGIE_BLOCK}}
+		</section>
+
+		<section id="tech">
+			<h2 class="section-title">Tech</h2>
+			{{TECH_BLOCK}}
+		</section>
+
+		<section id="ki">
+			<h2 class="section-title">KI</h2>
+			{{KI_BLOCK}}
+		</section>
+
+		<section id="nicetoknow">
+			<h2 class="section-title">Nice to know</h2>
+			{{NICETOKNOW_BLOCK}}
+		</section>
+
+		<footer class="briefing-footer">
+			<p>
+				<a href="archiv/">Archiv</a> · automatisch generiert · Quellen jeweils verlinkt
+			</p>
+		</footer>
+
+	</div>
+</body>
+</html>

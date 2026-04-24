@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# staticrypt artefakts
+/_staticrypt/
+node_modules/
+
+# raw, unverschlüsselte Briefings nicht versehentlich pushen
+*.raw.html
